@@ -72,14 +72,14 @@ Gestion_flotte/
 
 ### `drone.c`
 
-- Stocke chaque drone dans un tableau statique (`droneFleet`)
+- Implémente toutes les fonctions de bases pour gérer un drone (ajout, suppression, gestion des logs de postions, activation, etc...)
 - Met à jour la position avec des pas pseudo-aléatoires
 - Simule la décharge de batterie avec atterrissage forcé
 
 ### `flotte.c`
 
-- Utilise une **liste chaînée** pour représenter la flotte (`FleetNode`)
-- Permet d’ajouter, supprimer, chercher un drone
+- Utilise une **liste chaînée** pour représenter la flotte (`FleetNode`). Idéalement un tableau statique serait mieux pour de l'embarqué.
+- Permet d’ajouter, supprimer, chercher un drone, etc...
 - Itère sur tous les drones pour mise à jour + affichage UART
 
 ### `main.c`
