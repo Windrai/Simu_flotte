@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// Constructeur privé
+
 Drone::Drone(int id, int num_path_points, float x, float y, float z, QObject* parent)
     : QObject(parent), id(id), pos_x(x), pos_y(y), pos_z(z), active(true), current_step(0), battery_level(100) {
     if (!is_within_bounds(x, y, z)) {
@@ -22,7 +22,6 @@ Drone::Drone(int id, int num_path_points, float x, float y, float z, QObject* pa
 }
 
 
-// Méthode pour créer un drone
 QSharedPointer<Drone> Drone::create(int id, int num_path_points, float x, float y, float z) {
     if (!is_within_bounds(x, y, z)) {
         cerr << "Coordonnées hors des limites autorisées" << endl;
@@ -33,9 +32,6 @@ QSharedPointer<Drone> Drone::create(int id, int num_path_points, float x, float 
         cerr << "Le chemin doit contenir au moins un point" << endl;
         return nullptr;
     }
-
-    //return std::unique_ptr<Drone>(new Drone(id, num_path_points, x, y, z));
-    //Pose problème avec l'accès au constructeur privé.
     return QSharedPointer<Drone>::create(id, num_path_points, x, y, z);
 }
 
@@ -50,7 +46,7 @@ bool Drone::is_within_bounds(float x, float y, float z) {
 
 
 
-// Afficher le chemin du drone
+
 void Drone::print_path() const {
     int index = 0;
     for (const auto& p : path) {
@@ -58,17 +54,17 @@ void Drone::print_path() const {
     }
 }
 
-// Afficher les informations du drone
+
 void Drone::print_drone() const {
     cout << std::fixed << std::setprecision(2) << "Drone ID : " << id << ", Active : " << active << ", Position : (" << pos_x << ", " << pos_y << ", " << pos_z << ")" << endl;
 }
 
-// Activer le drone
+
 void Drone::activate() {
     active = true;
 }
 
-// Désactiver le drone
+
 void Drone::deactivate() {
     active = false;
 }
@@ -82,9 +78,9 @@ float Drone::get_battery() const { return battery_level; }
 bool Drone::is_active() const { return active; }
 int Drone::get_current_step() const { return current_step; }
 
+
 // Destructeur
 Drone::~Drone() = default;
-
 
 
 // Fonction pour initialiser un drone et afficher un rapport
@@ -102,7 +98,7 @@ QSharedPointer<Drone> Drone::report_et_initialise_drone(int id, int num_path_poi
 
 bool Drone::updateFromUARTMessage(const std::string &msg) {
     // On attend un message du type :
-    // "Drone %d - Pos: (%f, %f, %f)"
+    // "Drone %d - Pos: (%d, %d, %d) - Bat: %d - Act: %d "
     int receivedId;
     int x, y, z;
     int battery, act;
@@ -115,7 +111,6 @@ bool Drone::updateFromUARTMessage(const std::string &msg) {
             this->pos_z = static_cast<float>(z);
             this->battery_level= static_cast<float>(battery);
             this->active = act;
-            // Vous pouvez émettre un signal ou mettre à jour d'autres membres ici si nécessaire
             return true;
         }
     }

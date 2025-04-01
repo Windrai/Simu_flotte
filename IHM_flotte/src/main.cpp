@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     Fleet fleet;
 
     // Supposons que le SerialManager émette un signal dataReceived(const QString&)
-    // Vous pouvez connecter ce signal à une lambda qui met à jour la flotte :
+    // On peut connecter ce signal à une lambda qui met à jour la flotte :
     QObject::connect(&serialManager, &SerialManager::dataReceived,
                      [&fleet](const QString &msg) {
         // Conversion du message en std::string

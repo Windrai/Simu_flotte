@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+
+// Je travaille avec des listes chaînées mais idéalement il faudrait utiliser des tableaux statiques. C'est mieux pour de l'embarqué.
 /**
  * @brief Initialise une flotte vide.
  */

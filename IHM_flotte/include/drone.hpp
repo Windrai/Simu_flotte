@@ -18,14 +18,50 @@
 
 
 
-
+/**
+ * @struct Point
+ * @brief 
+ * Structure représentant un position en 3D
+ *      x : Position en x 
+ *      y : Position en y
+ *      z : Position en z 
+*/
 
 
 struct Point {
     float x, y, z;
 };
 
-// Classe Drone
+
+
+/**
+ * @class Drone
+ * @brief Représente un drone simulé dans l'application, avec état et comportement exposés à QML.
+ *
+ * Cette classe encapsule toutes les données et comportements associés à un drone dans la simulation.
+ * Elle expose ses propriétés (position, batterie, état) au système QML via `Q_PROPERTY`,
+ * permettant leur affichage et mise à jour dans l'interface graphique.
+ *
+ * Chaque drone maintient sa propre position, un chemin de vol (liste de points), utile pour les logs,
+ * un niveau de batterie simulé, et un état actif ou non.
+ *
+ * Des signaux sont émis lors des changements d'état, notamment `droneUpdated()`,
+ * pour permettre le binding réactif côté QML.
+ *
+ * ## Fonctions principales :
+ * - Création et initialisation d'un drone (`report_et_initialise_drone`)
+ * - Réception de messages UART pour mise à jour en temps réel (`updateFromUARTMessage`)
+ * - Gestion du chemin et état de vol
+ * - Méthodes d'affichage debug console
+ *
+ * ## Intégration QML :
+ * - La classe hérite de `QObject` pour être accessible dans QML
+ * - Les propriétés exposées sont lisibles et notifiées
+ * - Idélament le constructeur devrait être en privé pour imposer l'initialisation via la factory `create()` via `report_et_initialise_drone`
+ *
+ * @see Fleet pour la gestion globale d'une flotte de drones
+ */
+
 class Drone : public QObject {
 //On expose les propriétées au système QML et déclenche un signak chaque qu'une propritété chang
     Q_OBJECT
@@ -67,7 +103,7 @@ public:
     // Destructeur
     ~Drone();
 
-    // Normalement Constructeur en privé car initialisation conditionnelle des membres avec create mais impossible avec make_unique.
+    // Normalement Constructeur en privé car initialisation conditionnelle des membres avec create mais impossible avec make_unique. Je ne m'en sers pas 
     explicit Drone(int id, int num_path_points, float x, float y, float z, QObject* parent = nullptr);
 
     
@@ -89,10 +125,6 @@ private:
     static bool is_within_bounds(float x, float y, float z);
 
     static QSharedPointer<Drone> create(int id, int num_path_points, float x, float y, float z);
-
-    
-
-
 
 };
 

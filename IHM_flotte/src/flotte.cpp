@@ -1,8 +1,6 @@
 #include "drone.hpp"
 #include "flotte.hpp"
 #include <stdexcept>  // Pour std::runtime_error
-//#include <algorithm>
-//#include <unordered_map>
 
 using std::cerr;
 using std::endl;
@@ -92,32 +90,6 @@ bool Fleet::check_empty_fleet() const{
 }
 
 
-// Méthodes statiques pour QQmlListProperty
-qsizetype Fleet::dronesCount(QQmlListProperty<Drone>* list) {
-    auto* fleet = qobject_cast<Fleet*>(list->object);
-    return fleet ? fleet->drones.size() : 0;
-}
-
-Drone* Fleet::droneAt(QQmlListProperty<Drone>* list, qsizetype index) {
-    auto* fleet = qobject_cast<Fleet*>(list->object);
-    return fleet && index >= 0 && index < fleet->drones.size() ? fleet->drones[index].data() : nullptr;
-}
-
-/* Fonction statique pour ajouter un drone
-list->object est un pointeur générique (QObject*) vers l'objet propriétaire de la liste (fleet).
-*/
-void Fleet::appendDrone(QQmlListProperty<Drone>* list, Drone* drone) {
-    auto* fleet = qobject_cast<Fleet*>(list->object);
-    //Si la conversion réussit (ce qui signifie que list->object est effectivement une instance de Fleet)
-    if (fleet) {
-        fleet->drones.append(QSharedPointer<Drone>(drone)); // Ajoute le drone
-    }
-}
-
-
-QQmlListProperty<Drone> Fleet::getDrones() {
-    return QQmlListProperty<Drone>(this, this, &Fleet::appendDrone, &Fleet::dronesCount, &Fleet::droneAt, nullptr);
-}
 
 void Fleet::updateDroneFromUARTMessage(const std::string &msg) {
     // On ne traite que les messages qui commencent par "Drone"
@@ -164,82 +136,32 @@ void Fleet::updateDroneFromUARTMessage(const std::string &msg) {
 
 
 
-// Méthode pour exposer les drones à QML
-/*
-QList<QObject*> Fleet::getDrones() const {
-    QList<QObject*> droneList;
-    for (const auto& drone : drones) {
-        droneList.append(drone.data()); // Convertit QSharedPointer<Drone> en QObject*
-    }
-    return droneList;
+
+
+qsizetype Fleet::dronesCount(QQmlListProperty<Drone>* list) {
+    auto* fleet = qobject_cast<Fleet*>(list->object);
+    return fleet ? fleet->drones.size() : 0;
 }
+
+Drone* Fleet::droneAt(QQmlListProperty<Drone>* list, qsizetype index) {
+    auto* fleet = qobject_cast<Fleet*>(list->object);
+    return fleet && index >= 0 && index < fleet->drones.size() ? fleet->drones[index].data() : nullptr;
+}
+
+/* Fonction statique pour ajouter un drone
+list->object est un pointeur générique (QObject*) vers l'objet propriétaire de la liste (fleet).
 */
-
-
-
-
-/*
-// Fonction utilitaire pour associer une position à une cellule
-static GridCell Fleet::get_grid_cell(float x, float y, float z, float cell_size) {
-    return {
-        static_cast<int>(std::floor(x / cell_size)),
-        static_cast<int>(std::floor(y / cell_size)),
-        static_cast<int>(std::floor(z / cell_size))
-    };
+void Fleet::appendDrone(QQmlListProperty<Drone>* list, Drone* drone) {
+    auto* fleet = qobject_cast<Fleet*>(list->object);
+    //Si la conversion réussit (ce qui signifie que list->object est effectivement une instance de Fleet)
+    if (fleet) {
+        fleet->drones.append(QSharedPointer<Drone>(drone)); // Ajoute le drone
+    }
 }
 
-QList<QPair<int, int>> Fleet::detect_collisions(float collision_threshold, float cell_size) const {
-    std::unordered_map<GridCell, QList<QSharedPointer<Drone>>> grid;
 
-    // Étape 1 : Assigner les drones aux cellules
-    for (const auto& drone : drones) {
-        GridCell cell = get_grid_cell(drone->get_pos_x(), drone->get_pos_y(), drone->get_pos_z(), cell_size);
-        grid[cell].append(drone);
-    }
-
-    QList<QPair<int, int>> collisions;
-
-    // Étape 2 : Vérifier les drones par cellule et les cellules voisines
-    for (const auto& entry : grid) {
-        const auto& cell = entry.first;
-        const auto& cell_drones = entry.second;
-
-        // Itérer sur les drones de cette cellule
-        for (int i = 0; i < cell_drones.size(); ++i) {
-            for (int j = i + 1; j < cell_drones.size(); ++j) {
-                if (calculate_distance(
-                        {cell_drones[i]->get_pos_x(), cell_drones[i]->get_pos_y(), cell_drones[i]->get_pos_z()},
-                        {cell_drones[j]->get_pos_x(), cell_drones[j]->get_pos_y(), cell_drones[j]->get_pos_z()}) <
-                    collision_threshold) {
-                    collisions.append(qMakePair(cell_drones[i]->get_id(), cell_drones[j]->get_id()));
-                }
-            }
-        }
-
-        // Vérifier les cellules voisines
-        for (int dx = -1; dx <= 1; ++dx) {
-            for (int dy = -1; dy <= 1; ++dy) {
-                for (int dz = -1; dz <= 1; ++dz) {
-                    if (dx == 0 && dy == 0 && dz == 0) continue; // Ne pas comparer à la même cellule
-                    GridCell neighbor_cell = {cell.x + dx, cell.y + dy, cell.z + dz};
-                    if (grid.find(neighbor_cell) == grid.end()) continue;
-
-                    const auto& neighbor_drones = grid.at(neighbor_cell);
-                    for (const auto& drone1 : cell_drones) {
-                        for (const auto& drone2 : neighbor_drones) {
-                            if (calculate_distance(
-                                    {drone1->get_pos_x(), drone1->get_pos_y(), drone1->get_pos_z()},
-                                    {drone2->get_pos_x(), drone2->get_pos_y(), drone2->get_pos_z()}) <
-                                collision_threshold) {
-                                collisions.append(qMakePair(drone1->get_id(), drone2->get_id()));
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    return collisions;
+QQmlListProperty<Drone> Fleet::getDrones() {
+    return QQmlListProperty<Drone>(this, this, &Fleet::appendDrone, &Fleet::dronesCount, &Fleet::droneAt, nullptr);
 }
-*/
+
+

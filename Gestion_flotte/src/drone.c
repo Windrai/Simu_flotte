@@ -3,11 +3,6 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-// Tableau statique pour stocker les drones
-Drone droneFleet[MAX_DRONES];
-
-// Nombre de drones actifs
-int drone_count = 0;
 
 
 static int clamp_int(int32_t value, int min, int max){
