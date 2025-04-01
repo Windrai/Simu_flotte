@@ -28,24 +28,25 @@ Cette application représente l’**Interface Homme-Machine (IHM)** du projet de
 ---
 
 ## 📁 Arborescence des fichiers
-
+``` 
 IHM_flotte/
 ├── src/
-    ├── main.cpp               // Entrée de l'application Qt
-    ├── drone.hpp
-    ├── drone.cpp              // Classe représentant un drone
-    ├── flotte.hpp
-    ├── flotte.cpp             // Gestion de la flotte
-    ├── SerialManager.hpp
-    ├── SerialManager.cpp      // Gestion de la communication UART
+|   ├── main.cpp               // Entrée de l'application Qt
+|   ├── drone.hpp
+|   ├── drone.cpp              // Classe représentant un drone
+|   ├── flotte.hpp
+|   ├── flotte.cpp             // Gestion de la flotte
+|   ├── SerialManager.hpp
+|   ├── SerialManager.cpp      // Gestion de la communication UART
 ├── qml/
-    ├── main.qml              // Vue principale
-    ├── Header.qml            // En-tête (titre)
-    ├── panneau_lateral.qml   // Affichage des drones
-    ├── qml.qrc                // Ressources QML embarquées
-    └── map.qml               // Affichage de la "zone de vol"
+|   ├── main.qml              // Vue principale
+|   ├── Header.qml            // En-tête (titre)
+|   ├── panneau_lateral.qml   // Affichage des drones
+|   ├── qml.qrc                // Ressources QML embarquées
+|   └── map.qml               // Affichage de la "zone de vol"
 ├── include/                  //Fichiers d'entêtes
 └── build/                   // Répertoire de build 
+```
 ---
 
 ## 🧱 Technologies & dépendances
@@ -66,7 +67,7 @@ IHM_flotte/
 ### 🔧 Étapes
 
 ```bash
-cd IHM
+cd IHM_flotte
 cd build
 cmake ..
 make
@@ -75,10 +76,5 @@ make
 ## 🧑‍💻 Auteur
 
 **[Grégoire Domer]**  
-Projet étudiant / perso en systèmes embarqués, Qt et simulation temps réel
+Projet perso en systèmes embarqués, Qt et simulation temps réel
 
----
-
-## 📄 Licence
-
-Projet sous licence MIT. Libre utilisation, modification et distribution.
