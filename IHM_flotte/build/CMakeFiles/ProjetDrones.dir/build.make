@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/domer/Documents/PlatformIO/Projects/C++ project"
+CMAKE_SOURCE_DIR = /home/domer/Documents/PlatformIO/Projects/IHM_flotte
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/domer/Documents/PlatformIO/Projects/C++ project/build"
+CMAKE_BINARY_DIR = /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ProjetDrones.dir/depend.make
@@ -69,159 +69,159 @@ include CMakeFiles/ProjetDrones.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ProjetDrones.dir/flags.make
 
-include/moc_drone.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/include/drone.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating include/moc_drone.cpp"
-	cd "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include" && /home/domer/Qt/6.5.3/gcc_64/libexec/moc "@/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_drone.cpp_parameters"
+include/moc_drone.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/include/drone.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/moc_drone.cpp"
+	cd /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include && /home/domer/Qt/6.5.3/gcc_64/libexec/moc @/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_drone.cpp_parameters
 
-include/moc_flotte.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/include/flotte.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating include/moc_flotte.cpp"
-	cd "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include" && /home/domer/Qt/6.5.3/gcc_64/libexec/moc "@/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_flotte.cpp_parameters"
+include/moc_flotte.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/include/flotte.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating include/moc_flotte.cpp"
+	cd /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include && /home/domer/Qt/6.5.3/gcc_64/libexec/moc @/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_flotte.cpp_parameters
 
-include/moc_SerialManager.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/include/SerialManager.hpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating include/moc_SerialManager.cpp"
-	cd "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include" && /home/domer/Qt/6.5.3/gcc_64/libexec/moc "@/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_SerialManager.cpp_parameters"
+include/moc_SerialManager.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/include/SerialManager.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/moc_SerialManager.cpp"
+	cd /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include && /home/domer/Qt/6.5.3/gcc_64/libexec/moc @/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_SerialManager.cpp_parameters
 
-qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/qml/qml.qrc
-qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/qml/main.qml
-qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/qml/panneau_lateral.qml
-qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/qml/map.qml
-qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/C++\ project/qml/Header.qml
+qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/qml/qml.qrc
+qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/qml/main.qml
+qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/qml/panneau_lateral.qml
+qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/qml/map.qml
+qrc_qml.cpp: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/qml/Header.qml
 qrc_qml.cpp: qml/qml.qrc.depends
 qrc_qml.cpp: /home/domer/Qt/6.5.3/gcc_64/./libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating qrc_qml.cpp"
-	/home/domer/Qt/6.5.3/gcc_64/libexec/rcc --no-zstd --name qml --output "/home/domer/Documents/PlatformIO/Projects/C++ project/build/qrc_qml.cpp" "/home/domer/Documents/PlatformIO/Projects/C++ project/qml/qml.qrc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating qrc_qml.cpp"
+	/home/domer/Qt/6.5.3/gcc_64/libexec/rcc --no-zstd --name qml --output /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/qrc_qml.cpp /home/domer/Documents/PlatformIO/Projects/IHM_flotte/qml/qml.qrc
 
 ProjetDrones_autogen/timestamp: /home/domer/Qt/6.5.3/gcc_64/./libexec/moc
 ProjetDrones_autogen/timestamp: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Automatic MOC and UIC for target ProjetDrones"
-	/usr/bin/cmake -E cmake_autogen "/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/ProjetDrones_autogen.dir/AutogenInfo.json" Debug
-	/usr/bin/cmake -E touch "/home/domer/Documents/PlatformIO/Projects/C++ project/build/ProjetDrones_autogen/timestamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Automatic MOC and UIC for target ProjetDrones"
+	/usr/bin/cmake -E cmake_autogen /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles/ProjetDrones_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/ProjetDrones_autogen/timestamp
 
 CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
 CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o: ProjetDrones_autogen/mocs_compilation.cpp
 CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/build/ProjetDrones_autogen/mocs_compilation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/ProjetDrones_autogen/mocs_compilation.cpp
 
 CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/build/ProjetDrones_autogen/mocs_compilation.cpp" > CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/ProjetDrones_autogen/mocs_compilation.cpp > CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/build/ProjetDrones_autogen/mocs_compilation.cpp" -o CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/ProjetDrones_autogen/mocs_compilation.cpp -o CMakeFiles/ProjetDrones.dir/ProjetDrones_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/ProjetDrones.dir/src/main.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
-CMakeFiles/ProjetDrones.dir/src/main.cpp.o: /home/domer/Documents/PlatformIO/Projects/C++\ project/src/main.cpp
+CMakeFiles/ProjetDrones.dir/src/main.cpp.o: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/main.cpp
 CMakeFiles/ProjetDrones.dir/src/main.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjetDrones.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/main.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/main.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/main.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjetDrones.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/main.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/main.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/main.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/main.cpp
 
 CMakeFiles/ProjetDrones.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/src/main.cpp" > CMakeFiles/ProjetDrones.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/main.cpp > CMakeFiles/ProjetDrones.dir/src/main.cpp.i
 
 CMakeFiles/ProjetDrones.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/src/main.cpp" -o CMakeFiles/ProjetDrones.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/main.cpp -o CMakeFiles/ProjetDrones.dir/src/main.cpp.s
 
 CMakeFiles/ProjetDrones.dir/src/drone.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
-CMakeFiles/ProjetDrones.dir/src/drone.cpp.o: /home/domer/Documents/PlatformIO/Projects/C++\ project/src/drone.cpp
+CMakeFiles/ProjetDrones.dir/src/drone.cpp.o: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/drone.cpp
 CMakeFiles/ProjetDrones.dir/src/drone.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjetDrones.dir/src/drone.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/drone.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/drone.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/drone.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/src/drone.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjetDrones.dir/src/drone.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/drone.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/drone.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/drone.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/drone.cpp
 
 CMakeFiles/ProjetDrones.dir/src/drone.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/src/drone.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/src/drone.cpp" > CMakeFiles/ProjetDrones.dir/src/drone.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/drone.cpp > CMakeFiles/ProjetDrones.dir/src/drone.cpp.i
 
 CMakeFiles/ProjetDrones.dir/src/drone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/src/drone.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/src/drone.cpp" -o CMakeFiles/ProjetDrones.dir/src/drone.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/drone.cpp -o CMakeFiles/ProjetDrones.dir/src/drone.cpp.s
 
 CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
-CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o: /home/domer/Documents/PlatformIO/Projects/C++\ project/src/flotte.cpp
+CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/flotte.cpp
 CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/src/flotte.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/flotte.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/flotte.cpp
 
 CMakeFiles/ProjetDrones.dir/src/flotte.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/src/flotte.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/src/flotte.cpp" > CMakeFiles/ProjetDrones.dir/src/flotte.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/flotte.cpp > CMakeFiles/ProjetDrones.dir/src/flotte.cpp.i
 
 CMakeFiles/ProjetDrones.dir/src/flotte.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/src/flotte.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/src/flotte.cpp" -o CMakeFiles/ProjetDrones.dir/src/flotte.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/flotte.cpp -o CMakeFiles/ProjetDrones.dir/src/flotte.cpp.s
 
 CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
-CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o: /home/domer/Documents/PlatformIO/Projects/C++\ project/src/SerialManager.cpp
+CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o: /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/SerialManager.cpp
 CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/src/SerialManager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o -MF CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o.d -o CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/SerialManager.cpp
 
 CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/src/SerialManager.cpp" > CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/SerialManager.cpp > CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.i
 
 CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/src/SerialManager.cpp" -o CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/SerialManager.cpp -o CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.s
 
 CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
 CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o: include/moc_drone.cpp
 CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o -MF CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o.d -o CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_drone.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o -MF CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o.d -o CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_drone.cpp
 
 CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_drone.cpp" > CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_drone.cpp > CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.i
 
 CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_drone.cpp" -o CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_drone.cpp -o CMakeFiles/ProjetDrones.dir/include/moc_drone.cpp.s
 
 CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
 CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o: include/moc_flotte.cpp
 CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o -MF CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o.d -o CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_flotte.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o -MF CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o.d -o CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_flotte.cpp
 
 CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_flotte.cpp" > CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_flotte.cpp > CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.i
 
 CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_flotte.cpp" -o CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_flotte.cpp -o CMakeFiles/ProjetDrones.dir/include/moc_flotte.cpp.s
 
 CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
 CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o: include/moc_SerialManager.cpp
 CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o -MF CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o.d -o CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_SerialManager.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o -MF CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o.d -o CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_SerialManager.cpp
 
 CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_SerialManager.cpp" > CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_SerialManager.cpp > CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.i
 
 CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/build/include/moc_SerialManager.cpp" -o CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/include/moc_SerialManager.cpp -o CMakeFiles/ProjetDrones.dir/include/moc_SerialManager.cpp.s
 
 CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o: CMakeFiles/ProjetDrones.dir/flags.make
 CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o: qrc_qml.cpp
 CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o: CMakeFiles/ProjetDrones.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o -MF CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o.d -o CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o -c "/home/domer/Documents/PlatformIO/Projects/C++ project/build/qrc_qml.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o -MF CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o.d -o CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.o -c /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/qrc_qml.cpp
 
 CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/domer/Documents/PlatformIO/Projects/C++ project/build/qrc_qml.cpp" > CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/qrc_qml.cpp > CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.i
 
 CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/domer/Documents/PlatformIO/Projects/C++ project/build/qrc_qml.cpp" -o CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/qrc_qml.cpp -o CMakeFiles/ProjetDrones.dir/qrc_qml.cpp.s
 
 # Object files for target ProjetDrones
 ProjetDrones_OBJECTS = \
@@ -260,7 +260,7 @@ ProjetDrones: /usr/lib/x86_64-linux-gnu/libGLX.so
 ProjetDrones: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ProjetDrones: /home/domer/Qt/6.5.3/gcc_64/lib/libQt6Core.so.6.5.3
 ProjetDrones: CMakeFiles/ProjetDrones.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ProjetDrones"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ProjetDrones"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ProjetDrones.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -276,6 +276,6 @@ CMakeFiles/ProjetDrones.dir/depend: include/moc_SerialManager.cpp
 CMakeFiles/ProjetDrones.dir/depend: include/moc_drone.cpp
 CMakeFiles/ProjetDrones.dir/depend: include/moc_flotte.cpp
 CMakeFiles/ProjetDrones.dir/depend: qrc_qml.cpp
-	cd "/home/domer/Documents/PlatformIO/Projects/C++ project/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/domer/Documents/PlatformIO/Projects/C++ project" "/home/domer/Documents/PlatformIO/Projects/C++ project" "/home/domer/Documents/PlatformIO/Projects/C++ project/build" "/home/domer/Documents/PlatformIO/Projects/C++ project/build" "/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/ProjetDrones.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/domer/Documents/PlatformIO/Projects/IHM_flotte /home/domer/Documents/PlatformIO/Projects/IHM_flotte /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build /home/domer/Documents/PlatformIO/Projects/IHM_flotte/build/CMakeFiles/ProjetDrones.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ProjetDrones.dir/depend
 

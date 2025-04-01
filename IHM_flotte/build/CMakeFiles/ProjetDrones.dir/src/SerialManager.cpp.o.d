@@ -1,7 +1,7 @@
 CMakeFiles/ProjetDrones.dir/src/SerialManager.cpp.o: \
- /home/domer/Documents/PlatformIO/Projects/C++\ project/src/SerialManager.cpp \
+ /home/domer/Documents/PlatformIO/Projects/IHM_flotte/src/SerialManager.cpp \
  /usr/include/stdc-predef.h \
- /home/domer/Documents/PlatformIO/Projects/C++\ project/include/SerialManager.hpp \
+ /home/domer/Documents/PlatformIO/Projects/IHM_flotte/include/SerialManager.hpp \
  /usr/include/c++/14/iostream /usr/include/c++/14/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
