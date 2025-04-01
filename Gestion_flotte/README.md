@@ -16,18 +16,20 @@ Ce module embarqué est développé pour une **STM32F407 Discovery**. Il gère u
 
 ## 📁 Arborescence du dossier `Gestion_flotte/`
 
+```text
 Gestion_flotte/
-├── FreeRTOS-Kernel/        <- Kernel FreeRTOS (STM32CubeMX ou clone GitHub)
-├── include/                <- Fichiers d'en-tête projet
-├── lib/                    <- Librairies additionnelles (UART, HAL, etc.)
-├── src/                    <- Code source principal
-│   ├── main.c              <- Init STM32 + création des tâches FreeRTOS
-│   ├── drone.c             <- Logique individuelle d'un drone
-│   ├── flotte.c            <- Gestion globale de la flotte (liste chaînée)
-│   ├── uart_func.c         <- UART, messages, callbacks
-│   └── stm32f4xx_it.c      <- Gestion des interruptions système
-├── test/                   <- Code de test unitaire/FreeRTOS (à venir)
-└── platformio.ini          <- Fichier de config PlatformIO (si utilisé)
+├── FreeRTOS-Kernel/        (Kernel FreeRTOS)
+├── include/                (Fichiers d'en-tête projet)
+├── lib/                    (Librairies additionnelles : UART, HAL, etc.)
+├── src/                    (Code source principal)
+│   ├── main.c              (Init STM32 + tâches FreeRTOS)
+│   ├── drone.c             (Logique individuelle d’un drone)
+│   ├── flotte.c            (Gestion de la flotte – liste chaînée)
+│   ├── uart_func.c         (Fonctions UART, files FreeRTOS)
+│   └── stm32f4xx_it.c      (Interruptions Cortex-M4 et périphériques)
+├── test/                   (Code de test unitaire/FreeRTOS)
+└── platformio.ini          (Fichier de configuration PlatformIO)
+```
 ---
 
 ## ⚙️ Fonctionnalités
@@ -117,8 +119,8 @@ platform = ststm32
 board = disco_f407vg
 framework = stm32cube
 monitor_speed = 115200
-
-
+``
+---
 ## 🧑‍💻 Auteur
 
 **[Grégoire Domer]**  
