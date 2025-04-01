@@ -1,0 +1,3 @@
+// Structure commande :
+// CMD DRONE_ID ACTION PARAM1 PARAM2 PARAM3
+

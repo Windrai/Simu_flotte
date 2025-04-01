@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>panneau_lateral.qml</file>
+        <file>map.qml</file>
+        <file>Header.qml</file>
+    </qresource>
+</RCC>

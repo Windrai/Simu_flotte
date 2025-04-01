@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "STM32_ESSAI",
+			"path": "."
+		},
+		{
+			"path": "../C++ project"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cstring": "cpp",
+			"uart_func.h": "c",
+			"freertos.h": "c",
+			"flotte.h": "c",
+			"compare": "cpp",
+			"cstdint": "cpp"
+		}
+	}
+}

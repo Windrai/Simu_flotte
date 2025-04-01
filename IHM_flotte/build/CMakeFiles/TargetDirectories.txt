@@ -1,0 +1,5 @@
+/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/ProjetDrones.dir
+/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/edit_cache.dir
+/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/rebuild_cache.dir
+/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/ProjetDrones_autogen_timestamp_deps.dir
+/home/domer/Documents/PlatformIO/Projects/C++ project/build/CMakeFiles/ProjetDrones_autogen.dir

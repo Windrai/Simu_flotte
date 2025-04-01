@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "compare": "c",
+        "cstdint": "c",
+        "thread": "cpp",
+        "inttypes.h": "c"
+    }
+}
