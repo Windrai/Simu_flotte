@@ -98,10 +98,6 @@ CMD;MOVE;ID=3;X=500;Y=300
 ## 🧑‍💻 Auteur
 
 **[Grégoire Domer]**  
-Projet étudiant / perso en systèmes embarqués, Qt et simulation temps réel
+Projet perso en systèmes embarqués, Qt et simulation temps réel
 
 ---
-
-## 📄 Licence
-
-Projet sous licence MIT. Libre utilisation, modification et distribution.
